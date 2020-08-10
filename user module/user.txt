@@ -1,0 +1,7 @@
+light grey-#F2F8F7
+light cyan- #A5E5E2
+dark g-#AFAEAE
+green-#1C2F36
+blue-OF2FB8
+brown-#857648
+dark cyan-#44B2A9

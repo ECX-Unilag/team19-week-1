@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5673da9ff8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Xcourse</title>
+</head>
+<body>
+   <header>
+    <i class="fas fa-bars"></i>
+
+       <nav>
+           <div class="logo">
+               <span>X</span>course
+           </div>
+
+         
+           <ul class="top-nav">
+               <p id="close-x">X</p>
+               <li class="nav-items"> <a href="index.html"> Home</a></li>
+               <li class="nav-items">How To</li>
+               <li class="nav-items"> <a href="courses.html"> Courses</a></li>
+               <li class="nav-items"> <a href="invite.html"> Referral</a></li>
+              <li id="bt"> <button class="btn3">Sign in</button></li>
+
+              
+           </ul>
+       </nav>
+   </header> 
+
+   <main>
+<div class="about">
+    <div class="welcome">
+       <h1>Welcome to Xcourse</h1>
+<br>
+       <p class="gain">Gain amazing skills at a discounted price by following our referral path.</p>
+
+       <p class="payed">The more your sucessful referrals the less you pay.</p>
+
+       <button id="get" class="btn1">Get Started</button>
+      <a href="invite.html"> <button class="btn2">Learn More</button></a>
+    </div>
+
+    <div class="vector">
+        <img src="Images/person2.PNG" alt="">
+    </div>
+    
+
+
+
+</div>
+
+<div class="features">
+    <div class="discount">
+
+        <img src="Images/discount.PNG" alt="">
+
+        <p>Get amazing discount on course <br> prices by using the referral <br> feature</p>
+
+    </div>
+
+    <div class="great">
+<img src="Images/Course.PNG" alt="">
+
+<p>Our courses offer unique learner tailored <br> content to make learning <br> as smooth as possible.</p>
+    </div>
+
+    <div class="opportunities">
+<img src="Images/interact.PNG" alt="">
+
+<p>Our courses offer unique learner tailored <br> content to make learning <br> as smooth as possible.</p>
+    </div>
+</div>
+   </main>
+
+
+   <footer>
+<nav class="foot-nav">
+    <ul class="bottom">
+        <li class="foo-items">Home</li>
+        <li class="foo-items">Pricing</li>
+        <li class="foo-items">Referral</li>
+        <li class="foo-items">Lorem</li>
+        <li class="foo-items">Log Out</li>
+    </ul>
+</nav>
+
+   </footer>
+
+   <div class="bg-modal">
+       <div class="content">
+        <h2>Sign into Xcourse</h2> 
+           <form class="login">
+           
+        <label for="name">Username</label>
+        <input type="text" name="name" id="user">
+        <br>
+        <label for="pw">Password</label>
+           <input type="password" name="pw" id="pass">
+
+           <input  type="submit" class="sub" value="Sign in">
+<br>
+<br>
+          <p>Not a member yet? <span> <a href=""> Sign Up</a>  </span> </p> 
+
+        </form>
+       </div>
+   </div>
+
+<div class="ng-modal">
+    <form  class="new-user">
+<h2>Sign Up</h2>
+<br>
+<br>
+<input placeholder="Full Name" type="text">
+<br>
+<input placeholder="Mobile No." type="tel" name="" id="">
+<br>
+<input placeholder="Email Address" type="email" name="" id="">
+<br>
+<input placeholder=" Password" type="password" name="" id="">
+<br>
+<input placeholder="Confirm Password" type="password" name="" id="">
+<br>
+<input placeholder="Username" type="text">
+<br>
+<input id="newsub" type="submit" value="Sign Up">
+        
+    </form>
+</div>
+   
+   
+   <script src="index.js"></script>
+
+   <script>
+document.querySelector(".fa-bars").addEventListener("click" , function () {
+    document.querySelector(".top-nav").style.display="block"
+})
+
+document.getElementById("close-x").addEventListener("click",function () {
+    document.querySelector(".top-nav").style.display="none"
+})
+
+document.getElementById("get").addEventListener("click", function () {
+    document.querySelector(".ng-modal").style.display="flex"
+})
+
+document.getElementById("newsub").addEventListener("submit",function () {
+    document.querySelector(".ng-modal").style.display="none"
+})
+
+   </script>
+</body>
+</html>

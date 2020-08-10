@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Referral</title>
+</head>
+<body>
+   <header>
+       <h1 class="access">To access this course please <br> select one of these two methods</h1>
+   </header> 
+
+   <main>
+
+    <div class="types">
+       <p id="gain" >  1. <a  href="#"> Pay to gain lifetime for the course/chapter.</a> </p>
+<br>
+
+       <p id="unique">  2. <a href="#"> Generate a unique referral link and invite friends to access course for a limited period.</a></p>
+
+
+    </div>
+
+
+       <div class="methods">
+<form class="pay">
+<h2>Select Payment Options</h2>
+<br>
+<input placeholder="Card Number" type="text">
+<br>
+<input placeholder="Card Holder's Name" type="text">
+<br>
+<input placeholder="MM/YY" type="text">
+<br>
+<input placeholder="CVV" type="text">
+<br>
+<input type="text">
+<br>
+<input class="button" type="submit" value="Pay">
+</form>
+
+<form class="rf">
+<h2> Create unique referral link to invite your friends to Xcourse.</h2>
+<br>
+<input placeholder="Enter link name" name="name" type="text">
+
+<input type="submit" value="Generate">
+
+
+</form>
+
+
+       </div>
+   </main>
+
+   <footer></footer>
+   <script >
+       document.getElementById("gain").addEventListener("click" , function () {
+    document.querySelector(".pay").style.display="block"
+    document.getElementById("unique").style.display="none"
+})
+document.getElementById("unique").addEventListener("click", function () {
+    document.querySelector(".rf").style.display="block"
+    document.getElementById("gain").style.display="none"
+})
+
+
+
+
+
+   </script>
+</body>
+</html>
